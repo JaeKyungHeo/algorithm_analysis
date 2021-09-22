@@ -48,9 +48,9 @@ def mergeSort(n, s):
 
 def merge2(s,low, mid, high):
     u = [0]*(high-low+1)
-    arr2[len(u)] += 1
-    if arr2[len(u)]>count2[len(u)]:
-            count2[len(u)] = arr2[len(u)]
+    arr2[mid-low+1] += 1
+    if arr2[mid-low+1]>count2[mid-low+1]:
+            count2[mid-low+1] = arr2[mid-low+1]
     i = low
     j = mid + 1
     k = 0
@@ -72,7 +72,7 @@ def merge2(s,low, mid, high):
             k += 1
     for t in range(low, high+1):
         s[t] = u[t-low]
-    arr2[len(u)] -= 1
+    arr2[mid-low+1] -= 1
 
 
 def mergeSort2(s,low, high):
@@ -93,7 +93,7 @@ total = 0
 #print("(크기x공간수)")
 for i in range(1,len(count)-1):
     if count[i] > 0:
-        #print(i,'x',count[i])
+        print(i,'x',count[i])
         total += (i*count[i])
 print("총 추가 공간:",total)
 print("정렬후 -",s)
@@ -106,7 +106,7 @@ mergeSort2(s,0,len(s)-1)
 total2 = 0
 for i in range(1,len(count2)-1):
     if count2[i] > 0:
-        #print(i,'x',count2[i])
+        print(i,'x',count2[i])
         total2 += (i*count2[i])
 print("총 추가 공간:",total2)
 print("정렬후 -",s)
