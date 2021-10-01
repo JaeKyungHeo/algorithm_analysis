@@ -25,9 +25,6 @@ def quickSort(s,low, high):
         quickSort(s,low, pivotpoint-1)
         quickSort(s,pivotpoint+1, high)
 
-
-
-
 #비교할 데이터의 개수 n
 #n=8,16,24,32,40에 대하서 각 20개의 데이터를 생성하여 빠른 정렬실행
 #실행된 빠른정렬에 대해 비교 횟수를 그래프로 나타내기
@@ -51,8 +48,6 @@ for n in N:
 #print(y)
 plt.plot(x,y)
 plt.show()
-
-
 
 
 #2.
