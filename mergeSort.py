@@ -82,7 +82,6 @@ def mergeSort2(s,low, high):
         mergeSort2(s,mid+1,high)
         merge2(s,low,mid,high)
 
-    
 
 print("합병정렬")
 s = [11,5,2,16,12,1,8,15,6,14,9,3,10,7,13,4]
@@ -98,6 +97,7 @@ for i in range(1,len(count)-1):
 print("총 추가 공간:",total)
 print("정렬후 -",s)
 print()
+
 
 print("합병정렬2")
 s = [11,5,2,16,12,1,8,15,6,14,9,3,10,7,13,4]
