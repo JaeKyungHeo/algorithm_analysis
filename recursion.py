@@ -14,9 +14,7 @@ n = int(input())
 
 start_time = timeit.default_timer()#시작시간
 
-
 fun(n)
-
 
 terminate_time = timeit.default_timer()#종료시간
 
